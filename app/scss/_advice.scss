@@ -1,0 +1,128 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: $darkBlue;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+// Card Styling
+
+.advice-card {
+    width: 540px;
+    height: 332px;
+    background-color: $darkGrayishBlue;
+    border-radius: 20px;
+
+    @include breakpoint-down(small){
+        width: 343px;
+    }
+}
+
+.advice-heading {
+    margin-top: 47px;
+    font-size: 13px;
+    color: $neonGreen;
+    line-height: 17.76px;
+    letter-spacing: 4.09px;
+    text-transform: uppercase;
+
+    @include breakpoint-down(small){
+        font-size: 11px;
+        letter-spacing: 3.46px;
+        line-height: 15.03px;
+        margin-top: 37px;
+    }
+}
+
+.advice-text {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 0 44px 0 44px;
+    min-height: 158px;
+
+    @include breakpoint-down(small){
+        padding: 0 27px 0 27px;
+        min-height: 150px;
+    }
+}
+
+.quote {
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: -0.3px;
+    color: $lightCyan;
+    display: table-cell;
+    vertical-align: middle;
+    align-items: center;
+
+    @include breakpoint-down(small){
+        font-size: 22px;
+        letter-spacing: -0.26px;
+        line-height: 32.78px;
+    }
+}
+
+.desktop-divider {
+    margin-top: 25px;
+    width: 448px;
+    margin-bottom: 18px;
+
+    @include breakpoint-down(small){
+        width: 295px;
+        margin-top: 23.92px;
+        margin-bottom: 0px;
+    }
+}
+
+.dice-btn {
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    background-color: $neonGreen;
+    margin: 0 auto;
+    z-index: 1;
+    border-radius: 50px;
+    cursor: url('/images/pointer.svg'), auto;
+    border: none;
+    position: relative;
+
+    &:hover {
+        background-color: $neonGreen;
+        box-shadow: 0 0px 30px 5px $neonGreen;
+        transition: all 0.2s ease-in-out;
+    }
+
+    @include breakpoint-down(small){
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+
