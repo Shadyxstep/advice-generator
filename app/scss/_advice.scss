@@ -11,6 +11,7 @@ body {
     font-weight: 800;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -108,12 +109,15 @@ body {
     border-radius: 50px;
     cursor: url('/images/pointer.svg'), auto;
     border: none;
-    position: relative;
 
-    &:hover {
-        background-color: $neonGreen;
-        box-shadow: 0 0px 30px 5px $neonGreen;
-        transition: all 0.2s ease-in-out;
+    
+
+    @include breakpoint-up(large){
+        &:hover {
+            background-color: $neonGreen;
+            box-shadow: 0 0px 30px 5px $neonGreen;
+            transition: all 0.2s ease-in-out;
+        }
     }
 
     @include breakpoint-down(small){
@@ -123,6 +127,42 @@ body {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+
 }
 
+.attribution {
+    color: #fff;
+    position: absolute;
+    top: 93%;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+    width: 100%;
+    
+    a {
+        color: $neonGreen;
+        text-decoration: none;
+    }
+
+    img{
+        height: 30px;
+        width: 30px;
+        filter: invert(80%) sepia(61%) saturate(437%) hue-rotate(83deg) brightness(99%) contrast(105%);
+
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0 ease 0s;
+            cursor: pointer;
+        }
+    }
+
+    .attribution_img {
+        margin-bottom: 10px;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
 

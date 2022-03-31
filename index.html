@@ -11,10 +11,6 @@
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -24,18 +20,21 @@
           <img src="images/pattern-divider-desktop.svg" alt="pattern divider desktop" class="desktop-divider">
       <div>
         <button class="dice-btn" id="dice-btn">
-          <img src="images/icon-dice.svg" alt="dice" class="dice">
+          <img src="images/icon-dice.svg" alt="dice" class="dice" id="dice">
         </button>
       </div>
     </div>
 </div>
- <!-- Advice ID goes here -->
 
-  "<!-- Advice text goes here -->"
   
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
+  <div class="attribution">
+    <div class="attribution_img normal" onclick="Rotate()" id="vector_div">
+      <img src="images/up-arrow-svgrepo-com.svg" alt="vectorup" class="vector" id="vector">
+    </div>
+    <div class="attribution_text hidden" id="attr_text">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Shadyxstep">Leo Morgan</a>.
+    </div>
   </div>
 
   <script src="app/js/script.js"></script>
