@@ -1,3 +1,5 @@
+// Variables
+
 const API_LINK = "https://api.adviceslip.com/advice"
 const slip_number = document.getElementById('advice-number');
 const slip_quote = document.getElementById('quote');
@@ -7,6 +9,7 @@ const vector = document.getElementById('vector');
 const attr_text = document.getElementById('attr_text');
 const vector_div = document.getElementById('vector_div');
 
+// Fetches Response From API
 
 const fetchAdvice = async () => {
     const response = await fetch(API_LINK);
@@ -14,11 +17,15 @@ const fetchAdvice = async () => {
     return advice
 }
 
+// Renders slip id & advice text in HTML file.
+
 const renderAdvice = (adviceObj) => {
     const {id, advice} = adviceObj;
     slip_number.textContent = `ADVICE #${id}`;
     slip_quote.textContent = `${advice}`;
 }
+
+// Generates new advice.
 
 const generateNewAdvice = async () => {
     const render = await fetchAdvice()
@@ -31,12 +38,17 @@ window.addEventListener('DOMContentLoaded', () => {
     dice_button.addEventListener('click', generateNewAdvice);
 });
 
+
+// Spin animation for button.
+
 dice_button.addEventListener('click', function(){
     dice_img.classList.toggle('spin');
     setTimeout(() => {
         dice_img.classList.remove('spin')
     }, 900);
 });
+
+// Toggles fade-in & fade-out animations to attribution div.
 
 vector_div.addEventListener('click', function(){
 
@@ -52,6 +64,9 @@ vector_div.addEventListener('click', function(){
         }, 1500);
     }
 })
+
+
+// Rotates vector on click
 
 const Rotate = () => {
     if (vector_div.classList.contains("normal")) {
