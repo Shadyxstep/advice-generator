@@ -15,12 +15,12 @@ body {
 }
 
 .container {
-    height: 364px;
+    height: 22.75rem;
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 52%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     align-items: center;
@@ -31,29 +31,29 @@ body {
 // Card Styling
 
 .advice-card {
-    width: 540px;
-    height: 332px;
+    width: 33.75rem;
+    height: 20.75rem;
     background-color: $darkGrayishBlue;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
     @include breakpoint-down(small){
-        width: 343px;
+        width: 21.438rem;
     }
 }
 
 .advice-heading {
-    margin-top: 47px;
-    font-size: 13px;
+    margin-top: 2.938rem;
+    font-size: 0.813rem;
     color: $neonGreen;
-    line-height: 17.76px;
-    letter-spacing: 4.09px;
+    line-height: 1.11rem;
+    letter-spacing: 0.256rem;
     text-transform: uppercase;
 
     @include breakpoint-down(small){
-        font-size: 11px;
-        letter-spacing: 3.46px;
-        line-height: 15.03px;
-        margin-top: 37px;
+        font-size: 0.688rem;
+        letter-spacing: 0.216rem;
+        line-height: 0.939rem;
+        margin-top: 2.313rem;
     }
 }
 
@@ -61,41 +61,41 @@ body {
     display: table;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    padding: 0 44px 0 44px;
-    min-height: 158px;
+    margin-top: 0.938rem;
+    padding: 0 2.75rem 0 2.75rem;
+    min-height: 9.875rem;
 
     @include breakpoint-down(small){
-        padding: 0 27px 0 27px;
-        min-height: 150px;
+        padding: 0 1.688rem 0 1.688rem;
+        min-height: 9.375rem;
     }
 }
 
 .quote {
-    font-size: 28px;
-    line-height: 38.25px;
-    letter-spacing: -0.3px;
+    font-size: 1.75rem;
+    line-height: 2.391rem;
+    letter-spacing: -0.019rem;
     color: $lightCyan;
     display: table-cell;
     vertical-align: middle;
     align-items: center;
 
     @include breakpoint-down(small){
-        font-size: 22px;
-        letter-spacing: -0.26px;
-        line-height: 32.78px;
+        font-size: 1.375rem;
+        letter-spacing: -0.016rem;
+        line-height: 2.049rem;
     }
 }
 
 .desktop-divider {
-    margin-top: 25px;
-    width: 448px;
-    margin-bottom: 18px;
+    margin-top: 1.563rem;
+    width: 28rem;
+    margin-bottom: 1.125rem;
 
     @include breakpoint-down(small){
-        width: 295px;
-        margin-top: 23.92px;
-        margin-bottom: 0px;
+        width: 18.438rem;
+        margin-top: 1.495rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -103,8 +103,8 @@ body {
 
 .dice-btn {
     align-items: center;
-    height: 64px;
-    width: 64px;
+    height: 4rem;
+    width: 4rem;
     background-color: $neonGreen;
     margin: 0 auto;
     z-index: 1;
@@ -117,7 +117,7 @@ body {
     @include breakpoint-up(large){
         &:hover {
             background-color: $neonGreen;
-            box-shadow: 0 0px 30px 5px $neonGreen;
+            box-shadow: 0 0px 1.875rem 0.313rem $neonGreen;
             transition: all 0.2s ease-in-out;
         }
     }
@@ -135,16 +135,16 @@ body {
 // Attribution
 
 .attribution {
-    color: #fff;
+    color: $lightCyan;
     position: absolute;
     top: 93%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     align-items: center;
     width: 100%;
 
     @include breakpoint-down(small){
-        top: 89%;
+        top: 88%;
     }
     
     a {
@@ -153,8 +153,8 @@ body {
     }
 
     img{
-        height: 30px;
-        width: 30px;
+        height: 1.875rem;
+        width: 1.875rem;
         filter: invert(80%) sepia(61%) saturate(437%) hue-rotate(83deg) brightness(99%) contrast(105%);
 
         &:hover {
@@ -165,7 +165,7 @@ body {
     }
 
     .attribution_img {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
 }
