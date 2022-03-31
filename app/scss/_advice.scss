@@ -99,6 +99,8 @@ body {
     }
 }
 
+// Button
+
 .dice-btn {
     align-items: center;
     height: 64px;
@@ -130,6 +132,8 @@ body {
 
 }
 
+// Attribution
+
 .attribution {
     color: #fff;
     position: absolute;
@@ -138,6 +142,10 @@ body {
     font-size: 16px;
     align-items: center;
     width: 100%;
+
+    @include breakpoint-down(small){
+        top: 89%;
+    }
     
     a {
         color: $neonGreen;
