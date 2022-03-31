@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     position: absolute;
     left: 50%;
-    top: 52%;
+    top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     align-items: center;
@@ -90,7 +90,7 @@ body {
 .desktop-divider {
     margin-top: 1.563rem;
     width: 28rem;
-    margin-bottom: 1.125rem;
+    margin-bottom: 1rem;
 
     @include breakpoint-down(small){
         width: 18.438rem;
@@ -108,7 +108,7 @@ body {
     background-color: $neonGreen;
     margin: 0 auto;
     z-index: 1;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     cursor: url('/images/pointer.svg'), auto;
     border: none;
 
